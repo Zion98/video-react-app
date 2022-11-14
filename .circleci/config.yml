@@ -126,7 +126,7 @@ workflows:
                 - develop
                 - staging
                 - master
-       - prettier:
+      - prettier:
           requires:
             - build
           filters: 
