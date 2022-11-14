@@ -167,20 +167,20 @@ jobs:
                       "text": "*Author*:\n$CIRCLE_PROJECT_USERNAME"
                     }                
                   ]
+                },
+                {
+                  "type": "actions",
+                  "elements": [
+                    {
+                      "type": "button",
+                      "text": {
+                        "type": "plain_text",
+                        "text": "View Job"
+                      },
+                      url: "${CIRCLE_BUILD_URL}"
+                    }
+                  ]
                 }
-                # {
-                #   "type": "actions",
-                #   "elements": [
-                #     {
-                #       "type": "button",
-                #       "text": {
-                #         "type": "plain_text",
-                #         "text": "View Job"
-                #       },
-                #       url: "${CIRCLE_BUILD_URL}"
-                #     }
-                #   ]
-                # }
               ]
             }
 
