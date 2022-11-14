@@ -128,7 +128,7 @@ jobs:
     executor: slack-executor
     steps:
       - run: echo "Slack notification"
-      - slack/notify: 
+      - slack/notify:
           event: 'always'
           channel: 'redfire-circleci'
           template: ''
@@ -137,7 +137,7 @@ jobs:
               "blocks": [
                 {
                   "type": "header",
-                  "text":{
+                  "text": {
                     "type": "plain_text",
                     "text": "${CIRCLE_BRANCH} branch deployment to aws s3 and cloudfront is complete. 👍",
                     "emoji": true
@@ -161,11 +161,11 @@ jobs:
                     {
                       "type": "mrkdwn",
                       "text": "*Build*:\n$CIRCLE_BUILD_NUM"
-                    }
+                    },
                     {
                       "type": "mrkdwn",
                       "text": "*Author*:\n$CIRCLE_PROJECT_USERNAME"
-                    }                
+                    }
                   ]
                 },
                 {
@@ -177,7 +177,7 @@ jobs:
                         "type": "plain_text",
                         "text": "View Job"
                       },
-                      url: "${CIRCLE_BUILD_URL}"
+                      "url": "${CIRCLE_BUILD_URL}"
                     }
                   ]
                 }
