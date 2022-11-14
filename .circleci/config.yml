@@ -137,7 +137,7 @@ workflows:
                 - master
       - deploy-to-aws-s3: 
           requires:
-            -linting
+            - linting
             - prettier
           filters: 
             branches:
