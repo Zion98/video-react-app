@@ -119,7 +119,7 @@ jobs:
               aws cloudfront create-invalidation --distribution-id ${DEV_DISTRIBUTION_ID}  --path /\*
             fi
 
-   test:
+  test:
     executor: app-executor
     steps:
       - run: echo "test my app"
