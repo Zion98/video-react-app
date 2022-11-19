@@ -96,7 +96,7 @@ jobs:
       - checkout
       - *show-current-branch-name
       - run: 
-          name: Terraform Validate & format
+          name: Terraform Validate & Format
           command: |
             cd infrastructure/
             terraform init -backend=false
